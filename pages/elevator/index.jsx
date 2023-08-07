@@ -5,6 +5,7 @@ import Video from '../parking/components/video/Video'
 import GetConsult from '../../components/GetConsult'
 import axios from 'axios'
 import CatalogElevators from './components/CatalogElevators'
+import Image from 'next/image'
 
 const Elevator = () => {
 
