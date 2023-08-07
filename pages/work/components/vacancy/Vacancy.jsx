@@ -11,17 +11,14 @@ const Vacancy = () => {
     try {
       const resp = await axios.get('https://jsonplaceholder.typicode.com/users')
       setVacancy(prevState => ({...prevState, data: resp.data}))
-      // console.log(vacancy);
-      // console.log(vacancy);
     } catch (error) {
       console.error(error)
     }
   }
 
   useEffect(() => {
-    // console.log(vacancy);
     getVacancy()
-  },[])
+  })
   
   return (
     <div className={styles.vacancy}>
