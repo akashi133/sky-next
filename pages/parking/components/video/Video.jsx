@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 import { FreeMode, Pagination } from "swiper";
 
 
-const Video = ({arr}) => {
+const Video = ({arr = [1,2,3]}) => {
   return (
     <div className={styles.video}>
      <div className={styles.video_wrapper}>
