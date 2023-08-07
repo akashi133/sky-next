@@ -27,7 +27,7 @@
       }
       &_item {
         @apply mt-[40px];
-        @apply lg:flex lg:gap-[20px];
+        @apply lg:flex lg:gap-[20px] mt-0;
         &_info {
           @apply flex flex-col gap-[20px];
           @apply sm:flex sm:flex-col;

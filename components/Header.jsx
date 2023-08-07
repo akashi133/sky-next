@@ -18,16 +18,16 @@ const Header = () => {
           <img src="/images/Logo.png" alt="" />
         </Link>
       </div>
-      <button onClick={openHandler}>open</button>
-      <nav className={open? styles.open : styles.close}>
+      <button onClick={openHandler}><img src="/burgerMenu.png" alt="" /></button>
+      <nav className={open? styles.open : styles.close}  onClick={closeHandler}>
         <div className={styles.header_wrapper}>
           <div className={open? styles.open_bg : styles.close_bg}>
             <ul>
-              <li onClick={closeHandler}><Link href='/'>Главная</Link></li>
-              <li onClick={closeHandler}><Link href='/parking'>Sky auto parking</Link></li>
-              <li onClick={closeHandler}><Link href='/elevator'>Sky elevators</Link></li>
-              <li onClick={closeHandler}><Link href='/news'>Новости</Link></li>
-              <li onClick={closeHandler}><Link href='/work'>Работа</Link></li>
+              <li><Link href='/'>Главная</Link></li>
+              <li><Link href='/parking'>Sky auto parking</Link></li>
+              <li><Link href='/elevator'>Sky elevators</Link></li>
+              <li><Link href='/news'>Новости</Link></li>
+              <li><Link href='/work'>Работа</Link></li>
             </ul>
           </div>
         </div>

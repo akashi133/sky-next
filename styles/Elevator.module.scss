@@ -72,6 +72,8 @@
           @apply lg:block ;
           img {
             @apply h-[210px] w-[320px];
+            @apply  lg:w-[100%];
+            @apply xl:h-[100%] xl:w-[100%];
           }
           button {
             @apply lg:absolute lg:bottom-[30px] lg:left-[30px] lg:py-[13px] lg:px-[83px] lg:bg-white lg:text-[24px] lg:rounded-[35px];

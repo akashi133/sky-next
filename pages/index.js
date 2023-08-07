@@ -7,6 +7,9 @@ import GetConsult from '../components/GetConsult';
 import Link from 'next/link';
 
 export default function Home() {
+
+  const arr = [1,2,3]
+
   return (
     <div className={styles.MainPage}>
       <div className={styles.MainPage_wrapper}>
@@ -143,34 +146,22 @@ export default function Home() {
         <section className={styles.news}>
           <h2>Новости</h2>
           <div className={styles.news_wrapper}>
-            <div className={styles.news_wrapper__card}>
-              <span>01</span>
-              <img src="/images/news1.png" alt="" />
-              <div className={styles.news_wrapper__card_info}>
-                <h3>Производство лифтов в КР в первом квартале 2023 года выросло на 4,6</h3>
-                <p>Продукция не уступает по качеству импортным аналогам, но стоит значительно дешевле, сообщается на официальном сайте Мэра Москвы. Инженеры АО «Мослифт» начали выпускать комплектующие</p>
-                <div className={styles.date}><span>22.06.23</span> <img src="/images/icons/arrow.png" alt="" /></div>
-              </div>
-            </div>
-            <div className={styles.news_wrapper__card}>
-              <span>01</span>
-              <img src="/images/news1.png" alt="" />
-              <div className={styles.news_wrapper__card_info}>
-                <h3>Производство лифтов в КР в первом квартале 2023 года выросло на 4,6</h3>
-                <p>Продукция не уступает по качеству импортным аналогам, но стоит значительно дешевле, сообщается на официальном сайте Мэра Москвы. Инженеры АО «Мослифт» начали выпускать комплектующие</p>
-                <div className={styles.date}><span>22.06.23</span> <img src="/images/icons/arrow.png" alt="" /></div>
-              </div>
-            </div>
-            <div className={styles.news_wrapper__card}>
-              <span>01</span>
-              <img src="/images/news1.png" alt="" />
-              <div className={styles.news_wrapper__card_info}>
-                <h3>Производство лифтов в КР в первом квартале 2023 года выросло на 4,6</h3>
-                <p>Продукция не уступает по качеству импортным аналогам, но стоит значительно дешевле, сообщается на официальном сайте Мэра Москвы. Инженеры АО «Мослифт» начали выпускать комплектующие</p>
-                <div className={styles.date}><span>22.06.23</span> <img src="/images/icons/arrow.png" alt="" /></div>
-              </div>
-            </div>
-            <button><Link href='news'>Читайте больше новостей</Link></button>
+            { 
+              arr.map((item,index) => (
+                <Link href={`/news/1`}>
+                  <div className={styles.news_wrapper__card} key={index}>
+                    <span>01</span>
+                    <img src="/images/news1.png" alt="" />
+                    <div className={styles.news_wrapper__card_info}>
+                      <h3>Производство лифтов в КР в первом квартале 2023 года выросло на 4,6</h3>
+                      <p>Продукция не уступает по качеству импортным аналогам, но стоит значительно дешевле, сообщается на официальном сайте Мэра Москвы. Инженеры АО «Мослифт» начали выпускать комплектующие</p>
+                      <div className={styles.date}><span>22.06.23</span> <img src="/images/icons/arrow.png" alt="" /></div>
+                    </div>
+                  </div>
+                </Link>
+              ))
+            }
+            <button><Link href='/news'>Читайте больше новостей</Link></button>
           </div>
         </section>
       </div>
