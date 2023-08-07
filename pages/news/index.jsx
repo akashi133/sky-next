@@ -26,8 +26,8 @@ const News = () => {
       <section className={styles.newsPage_wrapper}>
         {
           news?.data?.map((item, index) => (
-            <Link href={`/news/${item.id}`}>
-            <div key={item.id} className={styles.news}>
+            <Link href={`/news/${item.id}`} key={item.id}>
+            <div className={styles.news}>
               <img src="/images/news1.png" alt="" />
               <div className={styles.news_info}>
                 <h3>Производство лифтов в КР в первом квартале 2023 года выросло на 4,6</h3>
