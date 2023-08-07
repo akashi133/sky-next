@@ -1,7 +1,7 @@
 import React from 'react'
 import { Accordion, AccordionBody, AccordionHeader, AccordionItem } from 'react-headless-accordion'
 
-const AccordionBlock = ({arr, obj}) => {
+const AccordionBlock = ({arr = [1,2,3], obj = {capacityTitle: 'lol'}}) => {
   return (
     <div className='content'>
     <h2 className='accordion_heading'>{obj?.heading}</h2>
