@@ -1,0 +1,54 @@
+.form {
+  @apply max-w-[425px] m-auto w-[100%] bg-[#3A5FE1] rounded-[20px] px-[22px] mt-[120px];
+  @apply sm:max-w-[768px] sm:m-auto sm:w-[100%] sm:bg-[#3A5FE1] sm:rounded-[20px] sm:px-[90px] sm:mt-[120px];
+  @apply lg:max-w-[1024px] lg:w-[1024px] px-0;
+  @apply xl:max-w-[1600px] xl:w-[1380px];
+  &_wrapper {
+    @apply w-[330px] py-[30px] m-auto;
+    @apply sm:w-[600px] sm:py-[50px];
+    @apply lg:w-[900px] lg:flex lg:justify-between;
+    @apply xl:w-[1200px];
+    &__info {
+      @apply w-[330px] text-[#fff];
+      @apply sm:w-[600px] sm:text-[#fff];
+      @apply lg:w-[370px];
+      @apply xl:w-[515px];
+      h3 {
+        @apply text-[27px] font-[600];
+        @apply sm:text-[24px] sm:font-[600];
+        @apply lg:text-[30px] lg:font-[700];
+        @apply xl:text-[42px];
+      }
+      p {
+        @apply text-[18px] font-[400] pt-[20px];
+        @apply sm:text-[18px] sm:font-[400] sm:pt-[20px];
+        @apply lg:text-[22px] lg:font-[400] lg:pt-[20px];
+      }
+    }
+    &__form {
+      @apply w-[100%] mt-[20px];
+      @apply sm:w-[100%] sm:mt-[20px];
+      @apply lg:w-[400px] lg:m-0;
+      @apply xl:w-[570px];
+      form {
+        @apply flex flex-col;
+        div {
+          @apply relative;
+          input {
+            @apply w-[100%] text-[#fff] bg-[#3A5FE1] border rounded-[14px] px-[15px] py-[15px] mb-[20px];
+            @apply sm:w-[100%] sm:text-[#fff] sm:bg-[#3A5FE1] sm:border sm:rounded-[18px] sm:px-[24px] sm:py-[20px] sm:mb-[20px];
+          }
+        }
+        button {
+          @apply bg-[#fff] py-[18px] rounded-[14px] font-[400] text-[20px]
+        }
+      }
+      &_icons {
+        @apply mt-[28px] flex gap-[22px];
+        img {
+          @apply w-[35px]
+        }
+      }
+    }
+  }
+}

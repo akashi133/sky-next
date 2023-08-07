@@ -1,0 +1,37 @@
+.video {
+  @apply sm:max-w-[768px] sm:m-auto sm:mt-[120px];
+  @apply lg:max-w-[1024px];
+  @apply xl:max-w-[1600px];
+  &_wrapper {
+    @apply sm:w-[600px] sm:m-auto;
+    @apply lg:w-[900px];
+    @apply xl:w-[1200px];
+    h2 {
+      @apply sm:text-[28px] sm:font-[500];
+      @apply lg:text-[30px] lg:font-[600];
+      @apply xl:text-[42px];
+    }
+    &__cards {
+      @apply sm:flex sm:flex-row sm:gap-[15px] sm:mt-[30px];
+      .mySwiper {
+        @apply sm:w-[600px];
+        @apply lg:w-[900px];
+        @apply xl:w-[1200px];
+      }
+      .card {
+        @apply sm:w-[200px] sm:p-[15px] sm:rounded-[15px] sm:bg-white sm:text-[#000];
+        @apply lg:w-[440px] lg:p-[15px] lg:rounded-[15px];
+        @apply xl:w-[440px] xl:p-[15px];
+        img {
+          @apply sm:w-[190px];
+          @apply lg:w-[410px];
+          @apply xl:w-[410px];
+        }
+        p {
+          @apply sm:w-[100%] sm:text-[14px] sm:font-[300] sm:mt-[15px];
+          @apply lg:w-[100%] lg:text-[15px] lg:font-[300] lg:mt-[15px];
+        }
+      }
+    } 
+  }
+}

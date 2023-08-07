@@ -1,0 +1,63 @@
+.formResume {
+  @apply sm:max-w-[768px] sm:m-auto sm:w-[600px] sm:flex sm:flex-col-reverse sm:justify-between sm:gap-[30px];
+  @apply lg:max-w-[1024px] lg:m-auto lg:w-[900px] lg:flex lg:flex-row lg:justify-between lg:gap-0;
+  @apply xl:max-w-[1600px] xl:w-[1200px];
+  &_form {
+    @apply sm:w-[100%] sm:py-[40px] sm:px-[20px] sm:bg-[#5774DB] sm:rounded-[15px];
+    @apply lg:w-[400px] lg:py-[40px] lg:px-[20px] lg:bg-[#5774DB] lg:rounded-[15px];
+    @apply xl:w-[458px];
+    p {
+      @apply w-[322px] m-auto mt-[26px] text-center text-[#fff] text-[14px] font-[400];
+    }
+    form {
+      @apply sm:flex sm:flex-col sm:gap-[20px];
+      input {
+        @apply sm:py-[10px] sm:px-[15px] sm:bg-inherit sm:outline-none sm:rounded-[5px] sm:border sm:border-[#C5C5C5] sm:text-[#C5C5C5];
+        @apply lg:py-[10px] lg:px-[15px] lg:rounded-[5px];
+        @apply xl:py-[15px] xl:px-[20px] xl:rounded-[5px];
+        &::placeholder {
+          @apply text-[#C5C5C5]
+        }
+      }
+      textarea {
+        @apply sm:py-[10px] sm:px-[15px] sm:bg-inherit sm:outline-none sm:rounded-[5px] sm:border sm:border-[#C5C5C5] sm:text-[#C5C5C5] sm:h-[143px];
+        @apply lg:py-[10px] lg:px-[15px] lg:h-[143px];
+        @apply xl:py-[15px] xl:px-[20px] xl:h-[143px];
+        &::placeholder {
+          @apply text-[#C5C5C5]
+        }
+      }
+      .buttons {
+        @apply sm:w-[100%] sm:flex sm:flex-col sm:gap-[20px];
+        @apply lg:w-[100%] lg:flex lg:flex-row lg:justify-between lg:gap-0;
+        button {
+          @apply sm:py-[10px] sm:px-[45px] sm:rounded-[10px] sm:bg-[#C5C5C5];
+          @apply lg:py-[10px] lg:px-[25px];
+          @apply xl:py-[10px] xl:px-[36px];
+          &:first-child {
+            @apply bg-[#43B02A] text-[#fff];
+          }
+          &:last-child {
+            @apply bg-[#fff] text-[#000];
+          }
+        }
+      }
+    }
+  }
+  &_text {
+    @apply sm:w-[100%] sm:py-[65px] sm:px-[35px] sm:text-[#fff] sm:rounded-[20px];
+    @apply lg:w-[490px] lg:py-[65px] lg:px-[35px] lg:rounded-[20px];
+    @apply xl:w-[711px] xl:py-[104px] xl:px-[66px];
+    background-image: url(../../../../public/images/work/formResume.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    h2 {
+      @apply sm:text-[34px] sm:font-[700];
+      @apply lg:text-[38px] lg:font-[700];
+    }
+    p {
+      @apply sm:w-[380px] sm:text-[18px] sm:font-[400] sm:mt-[30px];
+      @apply lg:w-[420px] lg:text-[22px] lg:font-[400] lg:mt-[30px];
+    }
+  }
+}

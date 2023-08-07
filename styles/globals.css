@@ -1,4 +1,7 @@
-html,
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* html,
 body {
   padding: 0;
   margin: 0;
@@ -23,4 +26,107 @@ a {
     color: white;
     background: black;
   }
+} */
+body {
+  @apply bg-[#f2f2f2]
+}
+.content {
+  @apply max-w-[1600px] m-auto ;
+}
+
+.accordion_heading {
+  @apply w-[360px] text-[32px] font-[500] m-auto mt-[120px];
+  @apply sm:w-[600px] sm:text-[30px] sm:font-[500] sm:m-auto sm:mt-[120px];
+  @apply lg:w-[900px] lg:text-[34px] lg:font-[500];
+  @apply xl:w-[1200px] lg:text-[42px];
+}
+.accordion {
+  @apply sm:w-[600px] sm:m-auto sm:flex sm:flex-col-reverse sm:gap-[0px] sm:p-[50px];
+  @apply lg:w-[900px] lg:flex-row lg:gap-[60px] lg:p-[50px];
+  @apply xl:w-[1300px] xl:gap-[60px] xl:p-[50px];
+}
+.accordion_left {
+  @apply lg:w-[350px] lg:flex lg:flex-col;
+  @apply lg:w-[350px] lg:flex lg:flex-col;
+  @apply xl:w-[570px];
+}
+.accordion_left h2 {
+  @apply lg:text-[34px] lg:font-[500];
+  @apply xl:text-[42px] xl:font-[600];
+}
+.accordion_left_item {
+  @apply w-[564px] my-[30px];
+}
+.accordion_left_item__title {
+  @apply w-[100%] flex items-center justify-between py-[30px] border-b-2 border-[#BEBEBE];
+}
+.accordion_left_item__title h3 {
+  @apply lg:w-[280px] lg:text-[17px] lg:font-[600] lg:text-start;
+  @apply xl:w-[380px] xl:text-[22px] xl:font-[600] xl:text-start;
+}
+.accordion_left_item__content {
+  @apply w-[100%] text-[16px] font-[400] mt-[15px] text-start;
+}
+.accordion_right {
+  @apply lg:w-[350px];
+  @apply xl:w-[570px];
+}
+.accordion_right ul{
+  @apply lg:w-[100%];
+}
+.accordion_right ul li{
+  @apply lg:w-[100%] lg:flex lg:justify-between lg:pt-[30px] lg:pb-[10px]; 
+}
+.accordion_right ul li p{
+  @apply lg:w-[270px];
+}
+.accordion_right ul li span{
+  @apply lg:w-[180px] lg:text-[16px] lg:text-[#3A5FE1];
+}
+
+
+.cardElevator {
+  @apply hidden;
+  @apply sm:max-w-[768px] sm:w-[600px] sm:flex sm:justify-between sm:p-[20px] sm:bg-[#ECF2F8];
+  @apply lg:max-w-[1024px] lg:w-[900px] lg:p-[40px];
+  @apply xl:max-w-[1600px] xl:w-[1280px];
+}
+.cardElevator .left {
+  @apply sm:w-[320px];
+  @apply lg:w-[470px];
+  @apply xl:w-[570px];
+}
+.cardElevator .left h2 {
+  @apply sm:text-[32px];
+  @apply lg:text-[46px];
+  @apply xl:text-[66px];
+}
+.cardElevator .left p {
+  @apply sm:text-[20px];
+  @apply lg:text-[24px];
+}
+.cardElevator .left .accordion_item {
+  @apply border-b-2 border-[#BEBEBE];
+}
+.cardElevator .left .accordion_item_title {
+  @apply sm:w-[100%] sm:flex sm:items-center sm:justify-between sm:py-[15px] sm:border-b-2 sm:border-[#BEBEBE];
+  @apply lg:w-[100%] lg:py-[30px];
+  @apply xl:w-[100%] xl:py-[30px];
+}
+.cardElevator .left .accordion_item_title h3 {
+  @apply sm:text-[18px] sm:font-[600];
+  @apply lg:text-[24px] lg:font-[600];
+}
+.cardElevator .left .accordion_item_title img {
+  @apply w-[35px];
+}
+.cardElevator .left .accordion_item_content p {
+  @apply text-[18px]
+}
+.right {
+  @apply sm:w-[200px];
+  @apply lg:w-[330px];
+}
+.right img {
+  @apply w-[100%]
 }

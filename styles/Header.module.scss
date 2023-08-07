@@ -1,0 +1,51 @@
+.header {
+  @apply max-w-[425px] z-[3] w-[100%] m-auto fixed justify-between px-[20px] flex top-0 bg-[#fff] border-b-2;
+  @apply sm:max-w-[768px] sm:w-[600px] sm:relative sm:m-auto sm:flex sm:justify-between sm:bg-[#0000] sm:border-b-0 sm:items-center sm:pt-[30px];
+  @apply lg:max-w-[1024px] lg:w-[930px] lg:pt-[30px];
+  @apply xl:max-w-[1600px] xl:w-[1200px];
+  img {
+    @apply sm:w-[90px];
+    @apply lg:w-[127px];
+  }
+  button {
+    @apply sm:hidden;
+  }
+  .close {
+    @apply invisible absolute;
+    @apply sm:static sm:visible;
+  }
+  .open {
+    @apply w-[100%] h-[100vh] bg-[#0005] visible absolute mt-[65px];
+    animation: open-mobile-header .3s ease-in-out;
+    transition: all .3s ease;
+    .header_wrapper {
+      @apply w-[200px] h-[100%] bg-[#fff] ml-auto rounded-[5px] border-t-2;
+      ul {
+        li {
+          @apply p-[20px]
+        }
+      }
+    }
+  }
+  nav {
+    @apply sm:block sm:visible sm:static right-0;
+    button {
+      @apply hidden
+    }
+    ul {
+      @apply sm:flex sm:gap-[20px];
+      li {
+        @apply sm:text-[12px];
+        @apply lg:text-[16px];
+      }
+    }
+  }
+}
+// @keyframes open-mobile-header {
+//   0% {
+//     transform: translate(0px, 0);
+//   }
+//   100% {
+//     transform: translate(-90px, 0);
+//   }
+// }

@@ -1,0 +1,80 @@
+.work {
+  @apply w-[360px] my-[100px] m-auto;
+  @apply sm:w-[600px] sm:my-[60px] sm:m-auto;
+  @apply lg:w-[900px] lg:my-[60px];
+  @apply xl:w-[1200px] xl:my-[60px];
+  &_top {
+    @apply w-[100%] relative ;
+    @apply sm:w-[100%] sm:relative sm:h-[220px];
+    @apply lg:w-[100%] lg:relative lg:h-[337px];
+    @apply xl:h-[437px];
+    h1 {
+      @apply absolute bottom-[5px] left-[5px] text-[18px] font-[700] text-[#fff];
+      @apply sm:absolute sm:bottom-[20px] sm:left-[50px] sm:text-[30px] sm:font-[700] sm:text-[#fff];
+      @apply lg:bottom-[50px] lg:left-[50px] lg:text-[48px] lg:font-[700];
+      @apply xl:bottom-[50px] xl:left-[50px] xl:text-[48px] xl:font-[700];
+    }
+  }
+  &_bottom {
+    @apply mt-[60px];
+    @apply sm:flex sm:justify-between sm:mt-[60px];
+    &_card {
+      @apply w-[360px] flex items-center gap-[10px] px-[10px] py-[20px] border rounded-[15px] shadow-xl;
+      @apply sm:w-[190px] sm:block sm:px-[10px] sm:py-[20px] sm:border sm:rounded-[15px] sm:shadow-xl;
+      @apply lg:w-[290px] lg:px-[20px] lg:py-[30px] lg:border lg:rounded-[20px] lg:shadow-xl;
+      @apply xl:w-[380px] xl:px-[25px] xl:py-[50px];
+      p {
+        @apply sm:mt-[22px] sm:text-[13px];
+        @apply lg:text-[16px];
+      }
+    }
+  }
+}
+.tips {
+  @apply w-[360px] my-[60px] m-auto;
+  @apply sm:w-[600px] sm:my-[60px] sm:m-auto;
+  @apply lg:w-[900px] lg:my-[60px] lg:m-auto;
+  @apply xl:w-[1200px];
+  h2 {
+    @apply text-[24px] font-[700] ;
+    @apply sm:text-[24px] sm:font-[700] sm:w-[600px];
+    @apply lg:text-[28px] lg:font-[700] lg:w-[600px];
+    @apply xl:text-[38px] xl:w-[683px];
+  }
+  &_wrapper {
+    @apply flex flex-col;
+    @apply lg:flex lg:justify-between lg:flex-row;
+    &_card {
+      @apply w-[360px] border shadow-xl py-[20px] px-[30px] rounded-[15px] mt-[40px] flex items-center gap-[25px];
+      @apply sm:w-[100%] sm:border sm:shadow-xl sm:py-[20px] sm:px-[30px] sm:rounded-[15px] sm:mt-[40px] sm:flex sm:items-center sm:gap-[100px];
+      @apply lg:w-[290px] lg:border lg:shadow-xl lg:py-[20px] lg:px-[20px] lg:rounded-[15px] lg:mt-[40px] lg:block;
+      @apply xl:w-[326px] xl:py-[32px] xl:px-[40px];
+      span {
+        @apply text-[#fff] font-[700] text-[20px] p-[10px] bg-sky-400 rounded-[4px];
+        @apply sm:text-[#fff] sm:font-[700] sm:text-[20px] sm:p-[10px] sm:bg-sky-400 rounded-[4px];
+        @apply lg:text-[#fff] lg:font-[700] lg:text-[40px] lg:p-[10px] lg:bg-sky-400 rounded-[4px];
+      }
+      div{
+        // @apply w-[200px];
+        @apply sm:w-[260px] sm:p-[30px];
+        @apply lg:w-[260px] lg:p-0;
+      }
+      h4 {
+        @apply text-[20px] font-[700] ;
+        @apply sm:text-[20px] sm:font-[700] ;
+        @apply lg:text-[20px] lg:font-[700] lg:mt-[20px];
+      }
+      p {
+        @apply text-[14px] font-[700] text-[#565656] mt-[20px];
+        @apply sm:text-[14px] sm:font-[700] sm:text-[#565656] sm:mt-[20px];
+        @apply lg:text-[14px] lg:font-[700] lg:text-[#565656] lg:mt-[20px];
+      }
+    }
+  }
+  button {
+    @apply w-[100%] py-[15px] px-[20px] bg-[#43B02A] text-[#fff] text-[22px] font-[400] rounded-[16px] mt-[50px];
+    @apply sm:w-[100%] sm:py-[15px] sm:px-[43px] sm:bg-[#43B02A] sm:text-[#fff] sm:text-[22px] sm:font-[400] sm:rounded-[16px] sm:mt-[50px];
+    @apply lg:w-[370px] lg:py-[15px] lg:px-[43px] lg:bg-[#43B02A] lg:text-[#fff] lg:text-[22px] lg:font-[400] lg:rounded-[16px] lg:mt-[50px];
+    @apply xl:w-[460px] xl:py-[17px] xl:px-[43px] xl:text-[28px] xl:font-[400];
+  }
+}

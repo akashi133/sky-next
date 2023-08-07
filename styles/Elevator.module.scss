@@ -1,0 +1,247 @@
+.Elevator {
+  @apply max-w-[425px] m-auto;
+  @apply sm:max-w-[768px];
+  @apply lg:max-w-[1024px];
+  @apply xl:max-w-[1600px];
+  &_wrapper {
+    @apply sm:relative;
+    &__top {
+      @apply w-[360px] m-auto mt-[120px];
+      @apply sm:w-[600px];
+      @apply lg:w-[900px] lg:flex;
+      @apply xl:w-[1200px];
+      .left {
+        &__info {
+          @apply sm:flex sm:justify-between;
+          h1 {
+            @apply text-[36px] font-[700] italic;
+            @apply sm:w-[300px] sm:text-[40px];
+            @apply lg:w-[300px] lg:text-[40px];
+            @apply xl:w-[414px] xl:text-[60px];
+          }
+          i {
+            @apply text-[32px] font-[600];
+            @apply sm:block sm:text-[22px] sm:w-[300px] font-[400];
+            @apply lg:text-[18px] lg:w-[280px];
+            @apply xl:text-[32px] xl:w-[416px];
+          }
+        }
+        &__overlay {
+          @apply relative;
+          // @apply sm:w-[350px];
+          @apply lg:w-[566px];
+          @apply xl:w-[830px];
+          img {
+            // @apply w-[100%]
+          }
+          p {
+            @apply hidden;
+            @apply sm:block sm:absolute sm:top-[68px] sm:left-[68px] sm:w-[466px] sm:p-[10px] sm:bg-white sm:rounded-[10px];
+            @apply lg:w-[466px] lg:p-[10px] lg:rounded-[15px];
+            @apply xl:w-[566px] xl:p-[10px] xl:rounded-[15px];
+          }
+          .catalog {
+            @apply hidden;
+            @apply sm:absolute sm:flex sm:gap-[10px] sm:items-center sm:bottom-[30px] sm:right-[5%] sm:z-10 sm:bg-white sm:py-[10px] sm:px-[45px] sm:rounded-[35px];
+            @apply lg:hidden;
+            img {
+              @apply rotate-[270deg]
+            }
+          }
+        }
+      }
+      .right {
+        @apply relative;
+        
+        &__top {
+          @apply bg-[#598DFF] text-[#fff] py-[50px] px-[40px] rounded-[19px] mb-[0px] z-[10] w-[100%] bottom-[0px];
+          @apply sm:bg-[#598DFF] sm:text-[#fff] sm:py-[50px] sm:px-[40px] sm:rounded-[19px] sm:mb-[0px] sm:absolute sm:z-[10] sm:w-[300px] sm:bottom-[0%];
+          @apply lg:w-[320px] lg:py-[35px] lg:px-[30px] lg:rounded-[25px] lg:mb-[15px] lg:static;
+          @apply xl:w-[370px] xl:py-[45px] xl:px-[40px] xl:rounded-[25px] xl:mb-[15px] xl:static;
+          h3 {
+            @apply sm:text-[18px];
+            @apply lg:text-[24px];
+          }
+          p {
+            @apply text-[14px];
+          }
+        }
+        &__bottom {
+          @apply hidden;
+          @apply sm:relative;
+          @apply lg:block ;
+          img {
+            @apply h-[210px] w-[320px];
+          }
+          button {
+            @apply lg:absolute lg:bottom-[30px] lg:left-[30px] lg:py-[13px] lg:px-[83px] lg:bg-white lg:text-[24px] lg:rounded-[35px];
+            @apply xl:absolute xl:bottom-[50px] xl:left-[60px] xl:py-[13px] xl:px-[83px] xl:bg-white xl:text-[24px] xl:rounded-[35px];
+          }
+        }
+      }
+    }
+  }
+  .skyElevators {
+    @apply  w-[100%] m-auto bg-[#3A5FE1] rounded-[25px] mt-[120px];
+    @apply  sm:w-[100%] sm:m-auto sm:bg-[#3A5FE1] sm:rounded-[25px] sm:mt-[120px];
+    @apply  lg:w-[100%] lg:m-auto lg:bg-[#3A5FE1] lg:rounded-[25px] lg:mt-[120px];
+    &__info {
+      @apply w-[360px] m-auto pt-[60px] text-[#fff];
+      @apply sm:w-[600px] sm:m-auto sm:pt-[60px] sm:text-[#fff];
+      @apply lg:w-[900px] lg:m-auto lg:pt-[60px] lg:text-[#fff];
+      @apply xl:w-[1200px] xl:m-auto xl:pt-[60px] xl:text-[#fff];
+      h2 {
+        @apply text-[32px] font-[600] w-[360px];
+        @apply sm:text-[42px] sm:font-[600] sm:w-[620px];
+        @apply xl:w-[720]
+      }
+      p {
+        @apply text-[17px] font-[400] w-[330px] mt-[30px]; 
+        @apply sm:text-[24px] sm:font-[400] sm:w-[530px] sm:mt-[30px] ;
+      }
+    }
+    &__carousel {
+      @apply w-[100%] overflow-hidden py-[50px];
+      &_top {
+        @apply flex gap-[40px];
+        animation: right-move 10s linear infinite ;
+      }
+      &_bottom {
+        @apply flex gap-[40px] mt-[30px];
+        animation: left-move 10s linear infinite;
+
+      }
+    }
+  }
+  .whyElevators {
+    @apply w-[360px] m-auto mt-[120px];
+    @apply sm:w-[600px] sm:m-auto sm:mt-[120px];
+    @apply lg:w-[900px] lg:m-auto lg:mt-[120px];
+    @apply xl:w-[1200px] xl:m-auto xl:mt-[120px];
+    h2 {
+      @apply text-[38px] font-[600];
+    }
+    &__wrapper {
+      @apply grid grid-cols-1 gap-[33px] mt-[30px];
+      @apply sm:grid-cols-2 sm:gap-[33px];
+      @apply lg:grid-cols-3 lg:gap-[33px];
+      @media all and (min-width:320px) {
+        grid-template-areas: 
+            "security"
+            "hope"
+            "solution"
+            "comfort"
+            "video"
+        ;
+      }
+      @media all and (min-width:640px) {
+        grid-template-areas: 
+            "security hope"
+            "solution comfort"
+            "video video"
+        ;
+      }
+      @media all and (min-width:1024px) {
+        grid-template-areas: 
+            "security hope solution"
+            "comfort video video"
+        ;
+      }
+      div {
+        @apply py-[35px] px-[25px] rounded-[15px] bg-[#EFF3FF];
+        &:last-child {
+          @apply p-0;
+        }
+        .info {
+          @apply flex flex-col gap-[20px] p-0 h-[200px];
+          h3 {
+            @apply w-[240px] text-[19px] font-[600];
+          }
+          p {
+            @apply text-[16px] font-[400];
+
+          }
+        }
+      }
+      &_security{
+        grid-area: security;
+      }
+      &_hope{
+        grid-area: hope;
+        
+      }
+      &_solution{
+        grid-area: solution;
+        
+      }
+      &_comfort{
+        grid-area: comfort;
+        
+      }
+      &_video{
+        grid-area: video;
+
+      }
+    }
+  }
+  
+}
+
+@keyframes right-move {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-87%);
+  }
+}
+@keyframes left-move {
+  0% {
+    transform: translateX(-87%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.catalogElevator {
+  @apply sm:w-[600px] sm:m-auto sm:mt-[120px];
+  @apply lg:w-[900px] lg:m-auto lg:mt-[120px];
+  @apply xl:w-[1200px] xl:m-auto xl:mt-[120px];
+  h2 {
+    @apply text-[42px] font-[600]
+  }
+  .filter {
+    @apply flex gap-[20px] mt-[25px];
+    button {
+      @apply py-[11px] px-[22px] border border-[#3A5FE1] rounded-[10px] transition-all;
+      &:focus {
+        @apply bg-[#3A5FE1] text-[#fff]
+      }
+    }
+  }
+  .filteredList {
+    @apply mt-[45px] flex gap-[70px];
+    .card {
+      // @apply sm:w-[200px];
+      // @apply lg:w-[400px];
+      .card_details {
+        @apply mt-[30px];
+        h3 {
+          @apply text-[24px] font-[600]
+        }
+        span {
+          @apply pt-[11px] text-[#282828] font-[200];
+        }
+      }
+    }
+  }
+}
+.mySwiper {
+  @apply sm:w-[600px];
+  @apply lg:w-[900px];
+  @apply xl:w-[1200px];
+  .swipreSlide {
+    margin-bottom: 50px;
+  }
+}

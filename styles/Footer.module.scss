@@ -1,0 +1,75 @@
+.footer {
+  @apply bg-[#282828] max-w-[768px] w-[100%] pt-[80px] pb-[60px] m-auto mt-[120px];
+  @apply sm:bg-[#282828] sm:max-w-[768px] sm:w-[100%] sm:pt-[80px] sm:pb-[60px] sm:m-auto sm:mt-[120px];
+  @apply lg:max-w-[1024px] lg:w-[100%] lg:pt-[80px] lg:pb-[60px] lg:m-auto lg:mt-[120px];
+  @apply xl:max-w-[1600px] xl:w-[100%] xl:pt-[80px] xl:pb-[60px];
+  &_wrapper {
+    @apply w-[330px] m-auto;
+    @apply sm:w-[600px] sm:m-auto sm:flex sm:justify-between;
+    @apply lg:w-[930px];
+    @apply xl:w-[1200px];
+    h3 {
+      @apply text-white text-[25px];
+      @apply sm:text-white sm:text-[18px];
+      @apply lg:text-white lg:text-[20px];
+      @apply xl:text-[25px];
+    }
+    &__form {
+      form {
+        @apply w-[100%] flex flex-col;
+        @apply sm:w-[290px] sm:flex sm:flex-col;
+        @apply lg:w-[320px];
+        @apply xl:w-[420px];
+        input {
+          @apply border-b border-[#909090] bg-[#0000] pb-[10px] pt-[20px];
+          @apply sm:border-b sm:border-[#909090] sm:bg-[#0000] sm:pb-[10px] sm:pt-[20px];
+          @apply lg:pb-[10px] lg:pt-[30px];
+          @apply xl:pb-[10px] xl:pt-[37px];
+        }
+        .form_checkbox {
+          @apply mt-[40px];
+          label {
+            @apply text-[#909090] ml-[10px];
+            span {
+              @apply text-[#fff] border-b border-[#fff]
+            }
+          }
+        }
+        button {
+          @apply mt-[40px] bg-white items-start py-[20px] px-[20px] w-[100%];
+        }
+      }
+    }
+    &__info {
+      @apply sm:w-[290px];
+      @apply lg:flex lg:justify-between lg:w-[500px];
+      @apply xl:w-[580px];
+      h3 {
+        @apply my-[20px];
+        @apply sm:my-0 sm:mb-[20px];
+        @apply lg:mb-[30px];
+        @apply xl:mb-[50px];
+      }
+      &_left {
+        @apply sm:w-[290px] sm:flex sm:flex-col sm:gap-[20px] ;
+        @apply lg:w-[350px] lg:flex lg:flex-col lg:gap-[20px] ;
+        @apply xl:w-[400px] xl:gap-[20px];
+        
+        ul li {
+          @apply lg:text-[15px] text-[#909090] py-[6px];
+          @apply xl:text-[18px];
+        }
+      }
+      &_right {
+        @apply flex flex-col gap-[20px] sm:mt-[20px];
+        @apply flex flex-col gap-[20px] lg:m-0;
+        ul li {
+          @apply sm:text-[15px] sm:text-[#909090] sm:py-[0px];
+          @apply lg:text-[15px] lg:text-[#909090] lg:py-[6px];
+          @apply xl:text-[18px] xl:py-[6px];
+        }
+      }
+    }
+
+  }
+}

@@ -1,0 +1,19 @@
+.vacancyDetail {
+  @apply max-w-[1600px] w-[1200px] m-auto my-[100px];
+  &__name{
+    @apply w-[100%] flex flex-col gap-[40px];
+    h1 {
+      @apply text-[52px] font-[700];
+    }
+    h2 {
+      @apply text-[42px] font-[700];
+    }
+    button {
+      @apply w-[300px] text-[28px] font-[400] py-[17px] px-[63px] bg-[#43B02A] rounded-[16px] text-[#fff];
+
+    }
+  }
+  &__info{
+    @apply w-[100%] flex justify-between mt-[34px]
+  }
+}
