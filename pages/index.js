@@ -148,8 +148,8 @@ export default function Home() {
           <div className={styles.news_wrapper}>
             { 
               arr.map((item,index) => (
-                <Link href={`/news/1`}>
-                  <div className={styles.news_wrapper__card} key={index}>
+                <Link href={`/news/1`} key={index}>
+                  <div className={styles.news_wrapper__card}>
                     <span>01</span>
                     <img src="/images/news1.png" alt="" />
                     <div className={styles.news_wrapper__card_info}>
