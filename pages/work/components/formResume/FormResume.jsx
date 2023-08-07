@@ -6,12 +6,12 @@ const FormResume = () => {
   return (
     <div className={styles.formResume}>
       <div className={styles.formResume_form}>
-        <form action="">
-          <input type="text" name="" id="" placeholder='Имя Фамилия '/>
-          <input type="number" name="" id="" placeholder='Телефон '/>
-          <input type="email" name="" id="" placeholder='E-maill'/>
-          <input type="text" name="" id="" placeholder='Название профессии'/>
-          <textarea name="" id="" cols="30" rows="10" placeholder='Комментарий (необязательно)'></textarea>
+        <form>
+          <input type="text" placeholder='Имя Фамилия '/>
+          <input type="number" placeholder='Телефон '/>
+          <input type="email" placeholder='E-maill'/>
+          <input type="text" placeholder='Название профессии'/>
+          <textarea cols="30" rows="10" placeholder='Комментарий (необязательно)'></textarea>
           <div className={styles.buttons}>
             <button>Загрузить резюме </button>
             <button>Откликнуться</button>
