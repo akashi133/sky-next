@@ -16,7 +16,7 @@ const AboutProduct = () => {
                 <img src="/images/skyElevators.png" alt="" />
                 <div className={styles.right_block_item_info}>
                   <h3>Sky elevators</h3>
-                  <p>SKY Industrial Group — ведущий поставщик автоматических парковочных систем. Компания установила системы в различных странах мира. Системы SKY Industrial Group известны своим качеством, производительностью и надежностью.</p>
+                  <p>SKY Elevators - инновационные и высококачественные лифты для вертикальной транспортировки.</p>
                   <button>Подробнее</button>
                 </div>
               </div>
