@@ -99,7 +99,7 @@ const CatalogElevators = () => {
                 <AccordionBody className='accordion_item_content'><p>{elevator?.sideWall}</p></AccordionBody>
               </AccordionItem>
               <AccordionItem className="accordion_item">
-                <AccordionHeader className='accordion_item_title'><h3>Деверь</h3><img src="/images/parking/accordion/plus.png" alt="s" /></AccordionHeader>
+                <AccordionHeader className='accordion_item_title'><h3>Дверь</h3><img src="/images/parking/accordion/plus.png" alt="s" /></AccordionHeader>
                 <AccordionBody className='accordion_item_content'><p>{elevator?.door}</p></AccordionBody>
               </AccordionItem>
               <AccordionItem className="accordion_item">

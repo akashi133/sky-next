@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div className={styles.MainPage}>
       <div className={styles.MainPage_wrapper}>
-        <h1>SKY Industrial Group. <i>Время подниматься вместе</i></h1>
+        <h1>SKY Industrial Group. <i>Поднимайтесь с нами!</i></h1>
         <div className={styles.MainPage_wrapper__infoBlock}>
           <div className={styles.MainPage_wrapper__infoBlock__left}>
             <div className={styles.left_overlay}>
@@ -26,7 +26,7 @@ export default function Home() {
             <div className={styles.cards}>
               <div className={styles.card}>
                 <h3>500</h3>
-                <p>Оборудования в год</p>
+                <p>оборудования в год</p>
               </div>
               <div className={styles.card}>
                 <h3>20 000</h3>
@@ -38,7 +38,7 @@ export default function Home() {
             <div className={styles.right_overlay}>
               <div className={styles.right_overlay__top}>
                 <img src="/images/sky.png" alt="" />
-                <p>Многоотросливой завод SKY</p>
+                <p>Многоотрасливой завод SKY</p>
               </div>
               <img className={styles.rightImg} src="/images/main_right.png" alt="" />
               <div className={styles.right_overlay__text}>
@@ -74,7 +74,10 @@ export default function Home() {
         <section className={styles.revolution}>
           <div className={styles.revolution_info}>
             <h2>Производственная революция </h2>
-            <p>SKY Industrial Group - это компания, специализирующаяся на производстве и поставке лифтового оборудования и решений для вертикальной транспортировки. Компания предлагает широкий спектр лифтов, включая пассажирские лифты, грузовые лифты, пассажирско-грузовые лифты, лифты для инвалидов, лифты для жилых и коммерческих зданий, а также специализированные лифты для различных отраслей.</p>
+            <p>
+                Мы - первый лифтостроительный завод в Кыргызстане -  SKY Elevators заключили инвестиционное соглашение с одним из крупнейших заводов Южной Кореи SAEHAN.
+                Южнокорейская сторона внедряет инновационные технологии, а также современные методы управления и производства, включая обучение сотрудников завода.
+            </p>
           </div>
           <img src="/images/revolution.png" alt="" />
         </section>
@@ -82,7 +85,9 @@ export default function Home() {
           <img src="/images/highStandart.png" alt="" />
           <div className={styles.highStandart_info}>
             <h2>Высокие стандарты качества и полный спектр услуг в лифтовой индустрии </h2>
-            <p>SKY Industrial Group - это компания, специализирующаяся на производстве и поставке лифтового оборудования и решений для вертикальной транспортировки. Компания предлагает широкий спектр лифтов, включая пассажирские лифты, грузовые лифты, пассажирско-грузовые лифты, лифты для инвалидов, лифты для жилых и коммерческих зданий, а также специализированные лифты для различных отраслей.</p>
+            <p>
+              SKY Industrial Group - это компания, специализирующаяся на производстве и поставке, монтаже и обслуживании лифтового оборудования, а также решений для вертикальной транспортировки. Мы можем изготовить любой лифт для жилых и общественных зданий, в том числе и специализированные подъемники.  
+            </p>
           </div>
         </section>
         <section className={styles.aboutFabric}>
@@ -115,12 +120,12 @@ export default function Home() {
                 <p>Производственные лаборатории, осуществляющие тестирование узлов и элементов оборудования </p>
               </div>
               <div>
-                <p>Тестовую башню "SKY"  У нас вы можете не только увидеть нашу продукцию, но и прикоснуться к ней, ощутить ее качество и функциональность.</p>
+                <p>Тестовую башню {'«SKY»'} У нас вы можете не только увидеть нашу продукцию, но и прикоснуться к ней, ощутить ее качество и функциональность.</p>
               </div>
             </div>
           </div>
         </section>
-        <section className={styles.technology}>
+        {/* <section className={styles.technology}>
           <div className={styles.technology_left}>
             <h2>Передовые технологии с совместными усилиями <span>лучших специалистов</span></h2>
             <img src="/images/tech_left.png" alt="" />
@@ -140,7 +145,7 @@ export default function Home() {
               <img src="/images/tech_right.png" alt="" />
             </div>
           </div>
-        </section>
+        </section> */}
         <AboutProduct />
         <GetConsult />
         <section className={styles.news}>

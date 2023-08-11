@@ -57,7 +57,7 @@ const Elevator = () => {
           </div>
           <div className={styles.right}>
             <div className={styles.right__top}>
-              <h3>Пассажирские Грузовые Специализированные лифты, включая кухонные лифты</h3>
+              <h3>Изготавливаем пассажирские, грузовые, специализированные и кухонные лифты.</h3>
               <p>C полным спектром услуг от проектирования до обслуживания.</p>
             </div>
             <div className={styles.right__bottom}>
@@ -70,8 +70,8 @@ const Elevator = () => {
       <Video arr={arr}/>
       <section className={styles.skyElevators}>
         <div className={styles.skyElevators__info}>
-          <h2>Sky elevators Инновационные лифты для будущего.</h2>
-          <p>Наши лифты оснащены передовыми технологиями безопасности, такими как противоударные механизмы и инновационные датчики движения. Мы гарантируем надежную защиту пассажиров на протяжении всей поездки.</p>
+          <h2>Sky elevators - лифты для будущего.</h2>
+          <p>Наши лифты оснащены передовыми технологиями безопасности -  противоударными механизмами и датчиками движения. Мы гарантируем защиту пассажиров на протяжении всей поездки.</p>
         </div>
         <div className={styles.skyElevators__carousel}>
           <div className={styles.skyElevators__carousel_top}>
