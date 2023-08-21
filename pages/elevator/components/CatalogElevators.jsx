@@ -10,6 +10,7 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import { FreeMode, Pagination } from "swiper";
+import Link from 'next/link';
 
 
 const CatalogElevators = () => {
@@ -69,6 +70,7 @@ const CatalogElevators = () => {
           {
             filteredElevators?.map((item,index) => (
               <SwiperSlide className={styles.swipreSlide} key={index}>
+                <Link href={`#elevator`}>
               <article className={styles.card} onClick={() => setElevator(item)}>
                 <img src={item.image} alt="" />
                 <div className={styles.card_details}>
@@ -76,12 +78,13 @@ const CatalogElevators = () => {
                   <span>от 4 до 10 человек</span>
                 </div>
               </article>   
+                </Link>
               </SwiperSlide> 
             ))
           }
           </Swiper>
         </section>
-        <div className='cardElevator'>
+        <div className='cardElevator' id='elevator'>
           <div className='left'>
             <h2>{elevator?.name}</h2>
             <p>{elevator?.subtitle}</p>

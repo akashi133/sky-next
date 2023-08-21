@@ -1,11 +1,17 @@
 .header {
   @apply max-w-[425px] z-[3] w-[100%] m-auto fixed justify-between px-[20px] flex top-0 bg-[#fff] border-b-2;
-  @apply sm:max-w-[768px] sm:w-[600px] sm:relative sm:m-auto sm:flex sm:justify-between sm:bg-[#0000] sm:border-b-0 sm:items-center sm:pt-[30px];
+  @apply sm:max-w-[768px] sm:w-[600px] sm:relative sm:m-auto sm:px-0 sm:flex sm:justify-between sm:bg-[#0000] sm:border-b-0 sm:items-center sm:pt-[30px];
   @apply lg:max-w-[1024px] lg:w-[930px] lg:pt-[30px];
   @apply xl:max-w-[1600px] xl:w-[1200px];
   img {
     @apply sm:w-[90px];
     @apply lg:w-[127px];
+  }
+  .logo {
+    @apply w-[100px] m-[13px];
+    @apply sm:m-0;
+    @apply lg:w-[127px];
+    
   }
   button {
     @apply sm:hidden;

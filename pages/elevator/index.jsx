@@ -51,7 +51,7 @@ const Elevator = () => {
             </div>
             <div className={styles.left__overlay}>
               <img src="/images/elevators/main_left.png" alt="" />
-              <p>SKY Elevators - инновационные и высококачественные лифты для вертикальной транспортировки.</p>
+              <p>SKY Elevators - высококачественные лифты для вертикальной транспортировки.</p>
             <div className={styles.catalog}><button>Каталог</button> <img src="/images/icons/arrow.png" alt="" /></div>
             </div>
           </div>
@@ -95,7 +95,7 @@ const Elevator = () => {
         </div>
       </section>
       <section className={styles.whyElevators}>
-        <h2>Почему Sky elevators ?</h2>
+        <h2>Почему выбирают нас ?</h2>
         <div  className={styles.whyElevators__wrapper}>
           <div className={styles.whyElevators__wrapper_security}>
             <div className={styles.info}>

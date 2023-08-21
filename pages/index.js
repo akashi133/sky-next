@@ -5,10 +5,17 @@ import { GrCirclePlay } from "react-icons/gr";
 import AboutProduct from '../components/AboutProduct';
 import GetConsult from '../components/GetConsult';
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
 
 export default function Home() {
 
+  const [windowWidth, setWindowWidth] = useState(null)
+  
+  
   const arr = [1,2,3]
+  useEffect(()=> {
+    setWindowWidth(window.innerWidth);
+  },[windowWidth])
 
   return (
     <div className={styles.MainPage}>
@@ -40,7 +47,13 @@ export default function Home() {
                 <img src="/images/sky.png" alt="" />
                 <p>Многоотрасливой завод SKY</p>
               </div>
-              <img className={styles.rightImg} src="/images/main_right.png" alt="" />
+              {
+                windowWidth < 500 ?
+                <img className={styles.rightImg} src="/images/mob_main_right.png" alt="" />
+                :
+                <img className={styles.rightImg} src="/images/main_right.png" alt="" />
+                
+              }
               <div className={styles.right_overlay__text}>
                 <button><i>Подробнее</i><img src="/images/arrow.png" alt="" /></button> 
                 <div className={styles.madeIn}>
@@ -51,7 +64,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <section className={styles.partners}>
+        {/* <section className={styles.partners}>
           <h2>Наши партнеры</h2>
           <div className={styles.partners_info}>
             <img src="/images/icons/partners/adidas.png" alt="" />
@@ -70,7 +83,7 @@ export default function Home() {
             <img src="/images/icons/partners/puma.png" alt="" />
             <img src="/images/icons/partners/adidas.png" alt="" />
           </div>
-        </section>
+        </section> */}
         <section className={styles.revolution}>
           <div className={styles.revolution_info}>
             <h2>Производственная революция </h2>

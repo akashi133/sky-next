@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './Video.module.scss'
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -7,9 +7,18 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import { FreeMode, Pagination } from "swiper";
+import Modal from '../../../../components/Modal';
 
 
 const Video = ({arr = [1,2,3]}) => {
+
+  const [modalActive, setModalActive] = useState(false);
+  const [selectedVideo, setSelectedVideo] = useState(null)
+
+  const selectedVideoFunc = (item) => {
+    setModalActive(true)
+    setSelectedVideo(item)
+  }
   return (
     <div className={styles.video}>
      <div className={styles.video_wrapper}>
@@ -27,7 +36,9 @@ const Video = ({arr = [1,2,3]}) => {
           >
           {
             arr.map((item,index) => (
-              <SwiperSlide key={index} className={styles.card}>
+
+              
+              <SwiperSlide key={index} className={styles.card} onClick={() => selectedVideoFunc(item)}>
                 <img src={item.image} alt="" />
                 <p>{item.desc}</p>
               </SwiperSlide>
@@ -35,6 +46,7 @@ const Video = ({arr = [1,2,3]}) => {
           }
           </Swiper>
         </div>
+          <Modal active={modalActive} setActive={setModalActive} item={selectedVideo}/>
      </div>
     </div>
   )

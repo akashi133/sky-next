@@ -5,6 +5,8 @@ import axios from 'axios'
 
 const News = () => {
   const [news,setNews] = useState({data: null})
+  const [loading,setLoading] = useState()
+  
   
   const getNews = async () => {
     try {
@@ -19,6 +21,11 @@ const News = () => {
   useEffect(() => {
     getNews()
   },[])
+  if (loading) {
+    return (
+      <div>loading...</div>
+    )
+  }
 
   return (
     <div className={styles.newsPage}>

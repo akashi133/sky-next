@@ -46,15 +46,15 @@ const Parking = () => {
         <div className={styles.parking_main__wrapper}>
           <div>
             <img src="/images/parking/main_left.png" alt="" />
-            <p>Идеальная парковка с минимальными усилиями</p>
+            {/* <p>Идеальная парковка с минимальными усилиями</p> */}
           </div>
           <div>
             <img src="/images/parking/main_mid.png" alt="" />
-            <p>Передовые технологии</p>
+            {/* <p>Передовые технологии</p> */}
           </div>
           <div>
             <img src="/images/parking/main_right.png" alt="" />
-            <p>Идеальная парковка с минимальными усилиями</p>
+            {/* <p>Идеальная парковка с минимальными усилиями</p> */}
           </div>
           <div className={styles.main_heading}>
             <h1>SKY Auto Parking.</h1>

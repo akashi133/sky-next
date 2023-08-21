@@ -64,7 +64,7 @@
         @apply flex flex-col gap-[20px] sm:mt-[20px];
         @apply flex flex-col gap-[20px] lg:m-0;
         ul li {
-          @apply sm:text-[15px] sm:text-[#909090] sm:py-[0px];
+          @apply text-[15px] text-[#909090] py-[0px];
           @apply lg:text-[15px] lg:text-[#909090] lg:py-[6px];
           @apply xl:text-[18px] xl:py-[6px];
         }

@@ -15,7 +15,7 @@ const Header = () => {
     <header className={styles.header}>
       <div>
         <Link href='/'>
-          <img src="/images/Logo.png" alt="" />
+          <img src="/images/Logo.png" className={styles.logo} alt="" />
         </Link>
       </div>
       <button onClick={openHandler}><img src="/burgerMenu.png" alt="" /></button>
